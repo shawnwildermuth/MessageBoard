@@ -1,0 +1,222 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!-- Title here -->
+  <title>OneColor With Slider - Responsive HTML5/CSS3 Template</title>
+  <!-- Description, Keywords and Author -->
+  <meta name="description" content="Your description">
+  <meta name="keywords" content="Your,Keywords">
+  <meta name="author" content="ResponsiveWebInc">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!-- Stylesheets -->
+  <!-- Bootstrap CSS -->
+  <link href="~/template/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Menu Drop Down Plug-in -->
+  <link href="~/template/css/ddlevelsmenu-base.css" rel="stylesheet">
+  <link href="~/template/css/ddlevelsmenu-topbar.css" rel="stylesheet">
+  <!-- Flex Slider CSS -->
+  <link href="~/template/css/flexslider.css" rel="stylesheet">
+  <!-- Pretty Photo CSS -->
+  <link href="~/template/css/prettyPhoto.css" rel="stylesheet">
+  <!-- Font awesome CSS -->
+  <link href="~/template/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Change the template color below. Supported colors blue,red and green. -->
+  <link href="~/template/css/blue.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="~/template/css/style.css" rel="stylesheet">
+
+  @RenderSection("styles", required: false)
+
+  <link href="~/Content/Site.css" rel="stylesheet" />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="~/template/img/favicon/favicon.png">
+</head>
+
+<body>
+
+  <!-- Sliding share panel. Click "Share it" to see. -->
+
+  <div class="sharepanel">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="padd spara">
+            <!-- Small para -->
+            <p>Nulla facilisi. Sed justo dui, scelerisque ut consectetur vel. </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="padd">
+            <div class="social">
+              <!-- Social media icons. Repalce # with your profile links -->
+              <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+              <a class="google-plus" href="#"><i class="fa fa-google-plus"></i></a>
+              <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+              <a class="pinterest" href="#"><i class="fa fa-pinterest"></i></a>
+              <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <!-- Fixed Bar -->
+
+  <div class="fixedbar">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="logo">
+            <div class="pull-left">
+              <!-- Logo with font awesome icon. Replace it with your logo. Replace # with your site link -->
+              <h1><a href="index.html"><i class="fa fa-email"></i> MessageBoard</a></h1>
+            </div>
+            <div class="navi">
+              <!-- Navigation Starts Here -->
+              <div class="pull-left">
+                <div id="ddtopmenubar" class="mattblackmenu">
+                  <!-- Main navigation -->
+                  <ul>
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+
+                    @Html.Partial("_LoginPartial")
+
+                  </ul>
+                </div>
+              </div><!--/ Navigation Ends Here -->
+            </div>
+          </div>
+          <div class="share">
+            <div class="pull-right">
+              <!-- Share it link for slider -->
+              <p><a href="#" class="open"><span class="hidden-xs">Share it <i class="fa fa-share"></i></span></a></p>
+            </div>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Fixed Bar End -->
+  <!-- Main content -->
+
+  <div class="main">
+    <div class="container">
+      <div class="row">
+
+        <!-- Start Body -->
+        @RenderBody()
+        <!-- End Body -->
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Foot -->
+  <!-- Three column footer -->
+
+  <div class="foot">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="padd">
+            <!-- Add class "widget" -->
+            <div class="widget">
+              <!-- Title -->
+              <h3>Morbi dictum nibh gravida</h3>
+              <!-- Content -->
+              <!-- Below is the blockquote -->
+              <blockquote>
+                <p>Fusce imperdiet, risus eget viverra faucibus, diam mi vestibulum libero, ut vestibulum tellus magna nec enim. Nunc dapibus varius interdum. Phasellus at lorem ut lectus fermentum convallis. Sed diam nisi, pulvinar vitae molestie hendrerit, venenatis eget mauris. Integer porta erat ac eros porta ultrices. </p>
+                <!-- Author information -->
+                <small>Ashok</small>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="padd">
+            <div class="widget">
+              <h3>Sed a interdum mauris</h3>
+              <ul>
+                <li><a href="#">Sed eu leo orci, condimentum gravida metus</a></li>
+                <li><a href="#">Etiam at nulla ipsum, in rhoncus purus</a></li>
+                <li><a href="#">Fusce vel magna faucibus felis dapibus facilisis</a></li>
+                <li><a href="#">Vivamus scelerisque dui in massa</a></li>
+                <li><a href="#">Pellentesque eget adipiscing dui semper</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="padd">
+            <div class="widget">
+              <h3>Service</h3>
+              <ul>
+                <li><a href="#">Sed eu leo gravida metus</a></li>
+                <li><a href="#">Etiam at rhoncus purus</a></li>
+                <li><a href="#">Fusce vel dapibus facilisis</a></li>
+                <li><a href="#">Vivamus scelerisque dui in massa</a></li>
+                <li><a href="#">Pellentesque eget  dui semper</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- Copyright information -->
+          <div class="fpadd">Copyright &copy; 2012 - <a href="#">Your Site</a> / <a href="#">Disclaimer</a> / <a href="#">Privacy Policy</a></div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </footer>
+
+
+  <!-- Scroll to top -->
+  <span class="totop"><a href="#"><i class="fa fa-angle-up"></i></a></span>
+
+
+  <!-- JavaScript files -->
+  <!-- jQuery -->
+  <script src="~/template/js/jquery.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="~/template/js/bootstrap.min.js"></script>
+  <!-- Easing JS -->
+  <script src="~/template/js/easing.js"></script>
+  <!-- Drop Down Menu Plug-in JS -->
+  <script src="~/template/js/ddlevelsmenu.js"></script>
+  <!-- Flex Slider JS -->
+  <script src="~/template/js/flexslider.js"></script>
+  <!-- Pretty Photo, Isotope JS -->
+  <script src="~/template/js/jquery.prettyPhoto.js"></script>
+  <script src="~/template/js/isotope.js"></script>
+  <!-- Respond JS for IE8 -->
+  <script src="~/template/js/respond.min.js"></script>
+  <!-- HTML5 Support for IE -->
+  <script src="~/template/js/html5shiv.js"></script>
+  <!-- Custom JS -->
+  <script src="~/template/js/custom.js"></script>
+
+  @RenderSection("scripts", required: false)
+
+</body>
+</html>

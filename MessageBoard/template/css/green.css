@@ -1,0 +1,67 @@
+/* Green Color */
+
+a, a:visited{
+color:#08b900;
+text-decoration:none;
+}
+
+a:hover{
+color:#08b900;
+text-decoration:underline;
+}
+
+.fixedbar{
+background:#08b900;
+}
+
+.ddsubmenustyle, .ddsubmenustyle div{
+border:1px solid #08a600 !important;
+}
+
+.ddsubmenustyle li a{
+background:#08b900 !important;
+border-bottom:1px solid #08a600 !important;
+}
+
+.ddsubmenustyle li a:hover{
+background:#08a600 !important;
+}
+
+.mattblackmenu ul{
+background:#08b900 !important;
+}
+
+.mattblackmenu li a{
+background:#08b900 !important;
+}
+
+.mattblackmenu li a:hover{
+background:#08a600 !important;
+}
+
+.main blockquote{
+background:url('../img/quote-green.png') top left no-repeat;
+}
+
+.entry li i { color: #08b900; }
+
+.posts .entry h2{
+background:#08b900;
+}
+
+.default-header hr{ border-top: 5px solid #08b900; }
+
+.service-item h3,
+.features-item h4{ color:#08b900; }
+
+.foot{
+background:#08b900;
+}
+
+.foot a, .foot a:visited{
+color:#c9ffc2;
+}
+
+.foot a:hover{
+color:#c9ffc2;
+}
