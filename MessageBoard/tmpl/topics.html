@@ -1,0 +1,22 @@
+﻿<div>
+  <p><a href="#/newTopic" class="btn btn-info btn-lg">New Topic</a></p>
+
+  <p ng-show="ctrl.isBusy">Loading...</p>
+  <p ng-show="ctrl.errorMessage.length > 0">{{ ctrl.errorMessage }}</p>
+
+  <div class="message row" ng-repeat="topic in ctrl.items">
+    <div class="title col-md-10">
+      {{ topic.title }}
+    </div>
+    <div class="date col-md-2">
+      {{ topic.created | date : "short" }}
+    </div>
+    <div class="contents col-md-12">
+      {{ topic.body }}
+    </div>
+    <div class="toolbar col-md-12">
+      <button class="btn btn-primary reply-button">Reply</button>
+    </div>
+  </div>
+
+</div>

@@ -67,7 +67,7 @@ namespace MessageBoard.Controllers
       if (_repo.AddTopic(newTopic) &&
           _repo.Save())
       {
-        return CreatedAtRoute("DefaultRoute", new { id = newTopic.Id }, newTopic);
+        return CreatedAtRoute("DefaultApi", new { id = newTopic.Id }, newTopic);
       }
 
       return BadRequest("Couldn't save the topic");

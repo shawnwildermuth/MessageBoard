@@ -1,110 +1,18 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+  ViewBag.Title = "Home Page";
 }
+@section Scripts {
+  <script src="~/Scripts/angular.min.js"></script>
+  <script src="~/Scripts/angular-route.min.js"></script>
+  <script src="~/js/index.js"></script>
+}
+
 <div class="message-header">
   <h1>Message Board</h1>
   <p class="lead">Latest Messages...</p>
 </div>
 
-<div class="messages">
-  <div class="message row">
-    <div class="title col-md-10">
-      Lorem ipsum dolor sit amet.
-    </div>
-    <div class="date col-md-2">
-      Feb 12, 2013
-    </div>
-    <div class="contents col-md-12">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada semper mi, id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus.
-    </div>
-    <div class="toolbar col-md-12">
-      <button class="btn btn-primary reply-button">Reply</button>
-    </div>
-    <div class="replies col-md-12">
-      <div class="reply">
-        <div class="created pull-right">
-          Feb 28, 2013
-        </div>
-        <div class="content">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada semper mi, id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus.
-        </div>
-      </div>
-      <div class="reply">
-        <div class="created pull-right">
-          Feb 28, 2013
-        </div>
-        <div class="content">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada semper mi, id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus.
-        </div>
-      </div>
-      <div class="reply">
-        <div class="created pull-right">
-          Feb 28, 2013
-        </div>
-        <div class="content">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada semper mi, id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus.
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="message row">
-    <div class="title col-md-10">
-      Lorem ipsum dolor sit amet.
-    </div>
-    <div class="date col-md-2">
-      Feb 12, 2013
-    </div>
-    <div class="contents col-md-12">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada semper mi, id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus.
-    </div>
-    <div class="toolbar col-md-12">
-      <button class="btn btn-primary reply-button">Reply</button>
-    </div>
-    <div class="replies col-md-12"></div>
-  </div>
-  <div class="message row">
-    <div class="title col-md-10">
-      Lorem ipsum dolor sit amet.
-    </div>
-    <div class="date col-md-2">
-      Feb 12, 2013
-    </div>
-    <div class="contents col-md-12">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada semper mi, id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus.
-    </div>
-    <div class="toolbar col-md-12">
-      <button class="btn btn-primary reply-button">Reply</button>
-    </div>
-    <div class="replies col-md-12"></div>
-  </div>
-  <div class="message row">
-    <div class="title col-md-10">
-      Lorem ipsum dolor sit amet.
-    </div>
-    <div class="date col-md-2">
-      Feb 12, 2013
-    </div>
-    <div class="contents col-md-12">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada semper mi, id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus.
-    </div>
-    <div class="toolbar col-md-12">
-      <button class="btn btn-primary reply-button">Reply</button>
-    </div>
-    <div class="replies col-md-12"></div>
-  </div>
-  <div class="message row">
-    <div class="title col-md-10">
-      Lorem ipsum dolor sit amet.
-    </div>
-    <div class="date col-md-2">
-      Feb 12, 2013
-    </div>
-    <div class="contents col-md-12">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada semper mi, id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus.
-    </div>
-    <div class="toolbar col-md-12">
-      <button class="btn btn-primary reply-button">Reply</button>
-    </div>
-    <div class="replies col-md-12"></div>
-  </div>
+<div class="messages" ng-app="index-page">
+
+  <div ng-view></div>
 </div>

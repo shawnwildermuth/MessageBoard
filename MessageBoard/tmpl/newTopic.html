@@ -1,0 +1,29 @@
+﻿<div>
+  <div class="col-md-6 col-md-offset-3">
+    <div class="well">
+      <form novalidate name="theTopicForm" ng-submit="newTopicCtrl.save()">
+        <div class="form-group">
+          <label for="title">Title:</label>
+          <span class="text-warning" ng-show="theTopicForm.title.$error.required">*</span>
+          <span class="text-warning" ng-show="theTopicForm.title.$error.minlength">Must be five chars or more.</span>
+          <input type="text" name="title" id="title" class="form-control"
+                 ng-model="newTopicCtrl.newItem.title" required ng-minlength="5" />
+        </div>
+
+        <div class="form-group">
+          <label for="body">Body:</label>
+          <span class="text-warning" ng-show="theTopicForm.body.$error.required">*</span>
+          <span class="text-warning" ng-show="theTopicForm.body.$error.minlength">Must be fifteen chars or more.</span>
+          <textarea cols="40" rows="4" name="body" id="body" class="form-control"
+                    ng-model="newTopicCtrl.newItem.body" required ng-minlength="15"></textarea>
+        </div>
+
+        <div class="form-group">
+          <input type="submit" class="btn btn-success" value="Save" ng-disabled="theTopicForm.$invalid" />
+          <a href="#/" class="btn">Cancel</a>
+        </div>
+      </form>
+      <div class="text-muted" ng-show="newTopic.isBusy">Loading...</div>
+      <div class="text-warning" ng-show="newTopic.errorMessage.length > 0">{{ newTopic.errorMessage }}</div>
+    </div>
+  </div></div>
